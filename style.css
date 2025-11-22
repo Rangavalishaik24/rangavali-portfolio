@@ -24,15 +24,19 @@ body {
   padding-top: 80px;
 }
 
-/* Navbar */
+/* Navbar - Glass Effect */
 .navbar {
   width: 100%;
   padding: 20px 40px;
   position: fixed;
   top: 0;
   left: 0;
-  background: #f7f8f9;
-  box-shadow: 0 2px 8px rgba(1, 32, 68, 0.05);
+  background: rgba(255, 255, 255, 0.15);   /* semi-transparent background */
+  backdrop-filter: blur(11px);             /* glass blur effect */
+  -webkit-backdrop-filter: blur(12px);     /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* subtle frosted border */
+  border-radius: 12px;                     /* optional rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* soft shadow for depth */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,7 +46,7 @@ body {
 .navbar .logo {
   font-size: 28px;
   font-weight: 600;
-  COLOR: #031550;
+  color:#041241;                          /* white text for contrast */
 }
 
 .nav-links {
@@ -50,25 +54,25 @@ body {
   display: flex;
   gap: 30px;
   font-size: 19px;
-  font-family:sans-serif;
-
+  font-family: sans-serif;
 }
 
 .nav-links li a {
   text-decoration: none;
-  color: #041241;
+  color:#041241;                          /* white links */
   font-weight: 700;
   transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-  color: #7e826d;
+  color:  #7e826d;                          /* golden hover effect */
 }
 
 .menu-icon {
   display: none;
   font-size: 24px;
   cursor: pointer;
+  color: #ffffff;                          /* white menu icon */
 }
 
 /* Hero Section */
@@ -77,8 +81,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 10%;
-  min-height: 100vh;
+  padding: 1px 10%;
+  min-height: 90vh;
 }
 
 .hero-left {
@@ -140,7 +144,7 @@ body {
 .hero-right img {
   width: 500px;         /* adjust size if needed */
   height: 500px;        /* keep width & height equal */
-  object-fit: scale-down;    /* to fit face properly */
+  object-fit:scale-down;    /* to fit face properly */
   border-radius: 60%;   /* makes it round */
   border: 2px solid #f4f0f0; /* optional white border */
   box-shadow: 0 4px 12px rgba(0,0,0,6); /* light shadow */
@@ -148,18 +152,18 @@ body {
 
 .bg-skew {
   position: absolute;
-  top: 0;
+  top: 1;
   right:1;
   width: 120%;
   height: 110%;
   background: #eeebeb;
-  transform: skewX(-26deg);
+  transform: skewX(-28deg);
   z-index: -1;
 }
 
 /* About Section */
 .about-section {
-  padding: 60px 20px;
+  padding: 100px 20px;
   background:#fff;
 }
 
@@ -223,7 +227,7 @@ body {
 
 .skills-section {
   background: #FEFEFA;
-  padding: 60px 0;
+  padding: 100px 0;
   text-align: center;
   overflow: hidden;
 }
@@ -259,7 +263,7 @@ body {
 
 
 .skill-card {
-  background: #f0ececfa;
+  background: #f9f9f9;
   border-radius: 15px;
   padding: 20px 15px;
   text-align: center;
@@ -272,6 +276,10 @@ body {
 
 .skill-card:hover {
   transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.273);   /* semi-transparent background */
+  backdrop-filter: blur(11px);             /* glass blur effect */
+  -webkit-backdrop-filter: blur(12px);     /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* subtle frosted border */
 }
 
 .skill-icon {
@@ -297,7 +305,7 @@ body {
 
 /* Projects Section */
 .projects-section {
-  padding: 80px 20px;
+  padding: 100px 20px;
   background-color: #f9f9f9;
   text-align: center;
 }
@@ -387,7 +395,7 @@ body {
 
 /* Contact Section */
 .contact-section {
-  padding: 80px 20px;
+  padding: 100px 20px;
   background: #f5f5f5;
   text-align: center;
 }
